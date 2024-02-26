@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7177bfb260c94618af5f4a75a15b3ce9" Name="Diagram1">
+        <EntityTypeShape EntityType="LopushokModel.Material" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LopushokModel.MaterialType" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LopushokModel.Product" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LopushokModel.ProductMaterial" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LopushokModel.ProductType" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LopushokModel.UnitOfMeasure" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="LopushokModel.FK__Materials__Mater__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="LopushokModel.FK__Materials__UnitO__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="LopushokModel.FK__ProductMa__Mater__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="LopushokModel.FK__Product__Product__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="LopushokModel.FK__ProductMa__Produ__4E88ABD4" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
