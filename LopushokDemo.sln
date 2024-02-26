@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LopushokDemoWPF", "LopushokDemoWPF\LopushokDemoWPF.csproj", "{D1DB12CC-849D-45D8-858B-193C9C84B7A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSUniversalLib", "WSUniversalLib\WSUniversalLib.csproj", "{5203C07D-3C23-4626-9C0A-BC3574AE66A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSUniversalTest", "WSUniversalTest\WSUniversalTest.csproj", "{31B21980-324B-49D1-8D97-BAFF0839BC53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D1DB12CC-849D-45D8-858B-193C9C84B7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1DB12CC-849D-45D8-858B-193C9C84B7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1DB12CC-849D-45D8-858B-193C9C84B7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5203C07D-3C23-4626-9C0A-BC3574AE66A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5203C07D-3C23-4626-9C0A-BC3574AE66A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5203C07D-3C23-4626-9C0A-BC3574AE66A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5203C07D-3C23-4626-9C0A-BC3574AE66A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B21980-324B-49D1-8D97-BAFF0839BC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B21980-324B-49D1-8D97-BAFF0839BC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B21980-324B-49D1-8D97-BAFF0839BC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B21980-324B-49D1-8D97-BAFF0839BC53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

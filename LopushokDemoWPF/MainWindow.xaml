@@ -10,7 +10,7 @@
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="7*"/>
+            <RowDefinition Height="6*"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         
@@ -19,20 +19,27 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <TextBox x:Name="tbSearch" 
                      Margin="10" Grid.Column="0" 
                      Text="Введите для поиска" FontSize="18"
-                     VerticalContentAlignment="Center"/>
-            <ComboBox x:Name="cbSort" FontSize="18"
-                      Grid.Column="1" Margin="10" 
+                     VerticalContentAlignment="Center"
+                     TextChanged="tbSearch_TextChanged"/>
+            
+            <ComboBox x:Name="cbSortOrders" FontSize="18"
+                      Grid.Column="1" Margin="10"
+                      VerticalContentAlignment="Center" 
+                      Text="Сортировка"/>
+            <ComboBox x:Name="cbSort" FontSize="18" 
+                      Grid.Column="2" Margin="10" 
                       VerticalContentAlignment="Center" 
                       Text="Сортировка"/>
             <ComboBox x:Name="cbFilter" FontSize="18"
-                      Grid.Column="2" Margin="10" 
+                      Grid.Column="3" Margin="10"
                       VerticalContentAlignment="Center" 
-                      Text="Фильтрация"/>
+                      Text="Фильтрация" DisplayMemberPath="Name"/>
         </Grid>
 
         <Grid Grid.Row="1">
