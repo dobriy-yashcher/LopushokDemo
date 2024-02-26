@@ -1,6 +1,6 @@
 ﻿namespace WSUniversalLib
 {
-    public class Class1
+    public class CalculationOfMaterials
     {
 
     }

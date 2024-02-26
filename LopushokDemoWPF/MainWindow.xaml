@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LopushokDemoWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        Loaded="Window_Loaded">
+        Title="Lopushok" Height="450" Width="800">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -24,22 +23,25 @@
 
             <TextBox x:Name="tbSearch" 
                      Margin="10" Grid.Column="0" 
-                     Text="Введите для поиска" FontSize="18"
+                     FontSize="18"
                      VerticalContentAlignment="Center"
                      TextChanged="tbSearch_TextChanged"/>
             
             <ComboBox x:Name="cbSortOrders" FontSize="18"
                       Grid.Column="1" Margin="10"
                       VerticalContentAlignment="Center" 
-                      Text="Сортировка"/>
+                      Text="Сортировка"
+                      SelectionChanged="cbSortOrders_SelectionChanged"/>
             <ComboBox x:Name="cbSort" FontSize="18" 
                       Grid.Column="2" Margin="10" 
                       VerticalContentAlignment="Center" 
-                      Text="Сортировка"/>
+                      Text="Сортировка"
+                      SelectionChanged="cbSort_SelectionChanged"/>
             <ComboBox x:Name="cbFilter" FontSize="18"
                       Grid.Column="3" Margin="10"
                       VerticalContentAlignment="Center" 
-                      Text="Фильтрация" DisplayMemberPath="Name"/>
+                      Text="Фильтрация" DisplayMemberPath="Name"
+                      SelectionChanged="cbFilter_SelectionChanged"/>
         </Grid>
 
         <Grid Grid.Row="1">
@@ -93,11 +95,11 @@
             </ListView> 
         </Grid>
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal" 
-                        HorizontalAlignment="Right" Margin="5">
-            <Button Content="←" Background="Transparent" 
-                        BorderBrush="Transparent"/>
-            <ListBox d:ItemsSource="{d:SampleData ItemCount=5}">
+        <StackPanel x:Name="PagesStackPanel" Grid.Row="2"
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right" Margin="5">
+            <Button Content="←" Background="Transparent" BorderBrush="Transparent" Click="PrevPageButton_Click"/>
+            <ListBox x:Name="PagesListBox" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="PagesListBox_SelectionChanged">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel/>
@@ -109,7 +111,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <Button Content="→" Background="Transparent" BorderBrush="Transparent"/>
+            <Button Content="→" Background="Transparent" BorderBrush="Transparent" Click="NextPageButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>
