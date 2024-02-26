@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>lopushok.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -73,10 +76,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="ADO\DataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ADO\DataModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\Material.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\MaterialType.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\Product.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\ProductMaterial.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\ProductType.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO\UnitOfMeasure.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -125,7 +151,41 @@
     <Content Include="ADO\DataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DataModel.Context.cs</LastGenOutput>
+      <DependentUpon>DataModel.edmx</DependentUpon>
     </Content>
+    <Content Include="ADO\DataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataModel.edmx</DependentUpon>
+      <LastGenOutput>DataModel.cs</LastGenOutput>
+    </Content>
+    <Resource Include="lopushok.ico" />
+    <Resource Include="Images\lopushok.png" />
+    <Resource Include="Images\paper_0.jpeg" />
+    <Resource Include="Images\paper_1.jpeg" />
+    <Resource Include="Images\paper_10.jpeg" />
+    <Resource Include="Images\paper_11.jpeg" />
+    <Resource Include="Images\paper_12.jpeg" />
+    <Resource Include="Images\paper_13.jpeg" />
+    <Resource Include="Images\paper_14.jpeg" />
+    <Resource Include="Images\paper_15.jpeg" />
+    <Resource Include="Images\paper_16.jpeg" />
+    <Resource Include="Images\paper_17.jpeg" />
+    <Resource Include="Images\paper_18.jpeg" />
+    <Resource Include="Images\paper_19.jpeg" />
+    <Resource Include="Images\paper_2.jpeg" />
+    <Resource Include="Images\paper_20.jpeg" />
+    <Resource Include="Images\paper_21.jpeg" />
+    <Resource Include="Images\paper_22.jpeg" />
+    <Resource Include="Images\paper_23.jpeg" />
+    <Resource Include="Images\paper_24.jpeg" />
+    <Resource Include="Images\paper_25.jpeg" />
+    <Resource Include="Images\paper_3.jpeg" />
+    <Resource Include="Images\paper_4.jpeg" />
+    <Resource Include="Images\paper_5.jpeg" />
+    <Resource Include="Images\paper_6.jpeg" />
+    <Resource Include="Images\paper_7.jpeg" />
+    <Resource Include="Images\paper_8.jpeg" />
+    <Resource Include="Images\paper_9.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
