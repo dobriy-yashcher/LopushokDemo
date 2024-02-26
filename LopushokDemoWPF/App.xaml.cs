@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LopushokDemoWPF.ADO;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,7 @@ namespace LopushokDemoWPF
     /// </summary>
     public partial class App : Application
     {
+        private static readonly LopushokEntities _connection = new LopushokEntities();
+        public static LopushokEntities Connection => _connection;
     }
 }
